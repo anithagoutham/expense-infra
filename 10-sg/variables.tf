@@ -8,44 +8,38 @@ variable "environment" {
 
 variable "common_tags" {
     default = {
-        project = "expense"
-        terraform = "true"
-        environment = "dev"
+        Project = "expense"
+        Terraform = "true"
+        Environment = "dev"
     }
 }
 
 variable "mysql_sg_tags" {
     default = {
-        component = "mysql"
+        Component = "mysql"
     }
 }
 
 variable "backend_sg_tags" {
     default = {
-        component = "backend"
+        Component = "backend"
     }
 }
 
 variable "frontend_sg_tags" {
     default = {
-        component = "frontend"
+        Component = "frontend"
     }
 }
 
 variable "bastion_sg_tags" {
     default = {
-        component = "bastion"
+        Component = "bastion"
     }
 }
 
 variable "ansible_sg_tags" {
     default = {
-        component = "ansible"
-    }
-}
-
-variable "app_alb_sg_tags" {
-    default = {
-        component = "app-alb"
+        Component = "ansible"
     }
 }
